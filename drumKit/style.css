@@ -1,0 +1,108 @@
+html {
+    font-size: 10px;
+    background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+    background-size: cover;
+  }
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }
+  
+  
+  
+  
+  .jena-nav__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .jena-nav {
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 .5rem black;
+    border-radius: 5px;
+    border: 0;
+    padding: 12px 20px 11px;
+    color: #fff;
+    font-size: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-decoration: none;
+  }
+  
+  .jena-nav + .jena-nav {
+    margin-left: 13px;
+  }
+  
+  .jena-nav.is-active,  
+  .jena-nav:hover,
+  .jena-nav:focus {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: #ffc600;
+    background: rgba(0, 0, 0, 1);
+  }
+  
+  .jena-nav--prev {
+    padding-left: 17px;
+  }
+  
+  .jena-nav--next {
+    padding-right: 17px;
+  }
+  
+  .jena-nav--disabled {
+    opacity: 0.6;
+    transition: none;
+  }
+  
+  .jena-nav--disabled:hover,
+  .jena-nav--disabled:focus {
+    transform: none;
+    cursor: no-drop;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+  }
